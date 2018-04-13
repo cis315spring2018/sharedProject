@@ -14,6 +14,7 @@ import javax.swing.JSlider;
 import javax.swing.JToggleButton;
 import javax.swing.JCheckBox;
 import javax.swing.JSpinner;
+import javax.swing.JScrollBar;
 
 /**
  * @author atmanning - atmanning@dbq.edu
@@ -75,5 +76,9 @@ public class JFrameMain extends JFrame {
 		JSpinner spinner = new JSpinner();
 		spinner.setBounds(304, 218, 30, 22);
 		contentPane.add(spinner);
+		
+		JScrollBar scrollBar = new JScrollBar();
+		scrollBar.setBounds(348, 38, 17, 141);
+		contentPane.add(scrollBar);
 	}
 }
