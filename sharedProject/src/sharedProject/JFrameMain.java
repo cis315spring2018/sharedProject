@@ -11,6 +11,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
 import javax.swing.JSlider;
+import javax.swing.JToggleButton;
 
 /**
  * @author atmanning - atmanning@dbq.edu
@@ -41,6 +42,7 @@ public class JFrameMain extends JFrame {
 	 * Create the frame.
 	 */
 	public JFrameMain() {
+		setTitle("sharedProject");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -59,5 +61,9 @@ public class JFrameMain extends JFrame {
 		slider.setMajorTickSpacing(10);
 		slider.setBounds(93, 116, 200, 63);
 		contentPane.add(slider);
+		
+		JToggleButton tglbtnNewToggleButton = new JToggleButton("New toggle button");
+		tglbtnNewToggleButton.setBounds(92, 13, 137, 25);
+		contentPane.add(tglbtnNewToggleButton);
 	}
 }
