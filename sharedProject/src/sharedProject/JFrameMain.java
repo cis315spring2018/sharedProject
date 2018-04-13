@@ -12,6 +12,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
 import javax.swing.JSlider;
 import javax.swing.JToggleButton;
+import javax.swing.JCheckBox;
 
 /**
  * @author atmanning - atmanning@dbq.edu
@@ -65,5 +66,9 @@ public class JFrameMain extends JFrame {
 		JToggleButton tglbtnNewToggleButton = new JToggleButton("New toggle button");
 		tglbtnNewToggleButton.setBounds(92, 13, 137, 25);
 		contentPane.add(tglbtnNewToggleButton);
+		
+		JCheckBox chckbxNewCheckBox = new JCheckBox("New check box");
+		chckbxNewCheckBox.setBounds(103, 188, 113, 25);
+		contentPane.add(chckbxNewCheckBox);
 	}
 }
