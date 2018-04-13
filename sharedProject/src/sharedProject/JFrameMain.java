@@ -10,6 +10,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JButton;
+import javax.swing.JSlider;
 
 /**
  * @author atmanning - atmanning@dbq.edu
@@ -48,7 +49,15 @@ public class JFrameMain extends JFrame {
 		contentPane.setLayout(null);
 		
 		JButton btnNewButton = new JButton("New button");
-		btnNewButton.setBounds(93, 64, 97, 25);
+		btnNewButton.setBounds(93, 64, 199, 25);
 		contentPane.add(btnNewButton);
+		
+		JSlider slider = new JSlider();
+		slider.setPaintTicks(true);
+		slider.setPaintLabels(true);
+		slider.setMinorTickSpacing(2);
+		slider.setMajorTickSpacing(10);
+		slider.setBounds(93, 116, 200, 63);
+		contentPane.add(slider);
 	}
 }
