@@ -13,6 +13,7 @@ import javax.swing.JButton;
 import javax.swing.JSlider;
 import javax.swing.JToggleButton;
 import javax.swing.JCheckBox;
+import javax.swing.JSpinner;
 
 /**
  * @author atmanning - atmanning@dbq.edu
@@ -70,5 +71,9 @@ public class JFrameMain extends JFrame {
 		JCheckBox chckbxNewCheckBox = new JCheckBox("New check box");
 		chckbxNewCheckBox.setBounds(103, 188, 113, 25);
 		contentPane.add(chckbxNewCheckBox);
+		
+		JSpinner spinner = new JSpinner();
+		spinner.setBounds(304, 218, 30, 22);
+		contentPane.add(spinner);
 	}
 }
